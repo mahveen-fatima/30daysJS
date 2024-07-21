@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #myElement {
+        width: 200px;
+        height: 100px;
+        border: 2px solid black;
+        text-align: center;
+        line-height: 100px;
+    }
+</style>
+</head>
+<body>
+    <p id="text">Click button to change the text</p>
+    <button onclick="textChange()">Click Here</button>
+    
+    <br>
+
+    <div class="button">background</div>
+    <button onclick="colorChange()">Click here to change the background color</button>
+
+    <br>
+
+    <button onclick="addingDiv()">Add New Div</button>
+
+    <br>
+
+    <ul id="list">
+        <li>Existing list</li>
+    </ul>
+    <button onclick="addingNewList()">Add new list</button>
+
+    <br>
+
+    <p class="removePara">This paragraph will get removed</p>
+    <button onclick="removing()">Tap to remove</button>
+
+    <br>
+
+    <ul id="parentList">
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+    </ul>
+    <button onclick="removingLastChild()">Removing the last list</button>
+
+    <br>
+
+    <img id="imageId" src="https://w7.pngwing.com/pngs/1003/487/png-transparent-github-pages-random-icons-white-logo-monochrome-thumbnail.png" alt="existing Image">
+    <button onclick="changingImageSrc()">Change Image</button>
+
+    <br>
+
+    <p id="paragraph">This is a paragraph.</p>
+    <button onclick="addClass()">Add class</button>
+    <button onclick="removeClass()">Remove class</button>
+
+    <br>
+
+    <p id="myParagraph">This is the original paragraph text.</p>
+    <button id="myButton">Change Text</button>
+
+    <br>
+
+    <div id="myElement">Hover over me!</div>
+
+
+    <script src="09-dom.js"></script>
+</body>
+</html>
