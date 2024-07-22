@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            display: block;
+            max-width: 100%;
+            height: 50px;
+            width: 50px;
+        };
+
+        #changeColor {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <button id="toChangeText">Click</button>
+    <p id="para">This is a paragraph</p>
+
+    <br>
+
+    <img id="toggleImage" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="image">
+
+    <br>
+
+    <div id="changeColor">Hover over here</div>
+
+    <br>
+
+    <input type="text" id="keyLog" placeholder="type here">
+
+    <br>
+
+    <input type="text" id="inputField" placeholder="Type something...">
+    <p id="displayPara">Current value: </p>
+
+    <br>
+
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <br>
+
+    <label for="dropdown">Choose an option:</label>
+    <select id="dropdown">
+        <option value="Option 1">Option 1</option>
+        <option value="Option 2">Option 2</option>
+        <option value="Option 3">Option 3</option>
+    </select>
+    <p id="displayOptions">Selected value: </p>
+
+    <br>
+
+    <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <div id="parent">
+        <button id="addChildButton">Add Child</button>
+        <ul id="list"></ul>
+    </div>
+
+    <script src="10-event.js"></script>
+</body>
+</html>
