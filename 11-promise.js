@@ -29,7 +29,6 @@ promiseTwo
 
 
 // 2. Chaining promises
-
 //1
 function fetchData1() {
     return new Promise((resolve) => {
@@ -73,7 +72,6 @@ function fetchData1() {
 
 
 // 3. Using Async/Await
-
 //1
 async function resolvedVal() {
     const promiseThree = new Promise((resolve) => {
@@ -143,7 +141,6 @@ async function fetchData() {
       console.error('Fetch error:', error);
     }
   }
-  
   fetchData();
   
 //5.Concurrent promises
