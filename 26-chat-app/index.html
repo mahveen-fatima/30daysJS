@@ -61,7 +61,6 @@
                         messageData = JSON.parse(event.data);
                     }
 
-                    // Check if the message is not a duplicate before displaying
                     if (messageData && messageData.username && messageData.message) {
                         displayMessage(messageData);
                     }
