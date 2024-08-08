@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+    height: 60px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #555;
+}
+
+ul#task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul#task-list li {
+    background: linear-gradient(to right, #f7f7f7, #eaeaea);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 5px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+}
+
+ul#task-list li:hover {
+    transform: translateY(-5px);
+}
+
+ul#task-list li h3 {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+ul#task-list li p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+ul#task-list li span {
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+    display: block;
+}
+
+ul#task-list li .button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+ul#task-list li .edit-btn,
+ul#task-list li .delete-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+ul#task-list li .delete-btn {
+    background-color: #dc3545;
+}
+
+ul#task-list li .delete-btn:hover {
+    background-color: #c82333;
+}
+
+ul#task-list li .edit-btn:hover {
+    background-color: #0056b3;
+}
