@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Pens",
+        "price": "$25.00",
+        "description": "Description for Product 1",
+        "imageUrl": "pens.webp"
+    },
+    {
+        "name": "Books",
+        "price": "$35.00",
+        "description": "Description for Product 2",
+        "imageUrl": "books.jpg"
+    },
+    {
+        "name": "Bag",
+        "price": "$45.00",
+        "description": "Description for Product 3",
+        "imageUrl": "bag.webp"
+    }
+]
