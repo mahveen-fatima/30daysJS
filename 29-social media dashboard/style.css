@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+}
+
+#login-section, #new-post, #posts-container {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="file"]:focus {
+    border-color: #0073e6;
+}
+
+button {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+#posts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.post {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 0.5s forwards;
+}
+
+.post img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-header .username {
+    font-weight: bold;
+}
+
+.post-header .timestamp {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.post-content {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.comments {
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.comment {
+    margin-bottom: 5px;
+}
+
+.comment-input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Styles for differentiating user posts */
+.post.other-user {
+    background-color: #e6f7ff;
+}
+
+.post.current-user {
+    background-color: #d1e7dd;
+}
+
+/* Animations */
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
